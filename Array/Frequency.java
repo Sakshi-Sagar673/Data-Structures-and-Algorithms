@@ -31,16 +31,16 @@ public class Frequency
 				freq[i]=count;
 			}
 		}
-		 //Displays the frequency of each element present in array  
-		 
-		  System.out.println("---------------------------------------");  
-        System.out.println(" Element | Frequency");  
-        System.out.println("---------------------------------------");  
-        for( i = 0; i < n; i++){  
-            if(freq[i] != -1)  
-                System.out.println("    " + arr[i] + "    |    " + freq[i]);  
-        }  
-        System.out.println("----------------------------------------");  
+		 //Displays the frequency of each element present in array 
+		System.out.println("---------------------------------------"); 
+		System.out.println(" Element | Frequency");  
+		System.out.println("---------------------------------------"); 
+		for( i = 0; i < n; i++){  
+			if(freq[i] != -1)  
+				System.out.println("    " + arr[i] + "    |    " + freq[i]);  
+		}  
+		System.out.println("----------------------------------------");   
+		    
 	}
 }
 		
