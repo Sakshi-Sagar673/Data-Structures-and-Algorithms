@@ -32,7 +32,7 @@ public class SelectionSort{
 						min=j;
 					}
 				}
-        //Swapping
+                                 //Swapping
 				if(min!=i)
 				{
 					temp=a[i];
