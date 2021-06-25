@@ -33,7 +33,6 @@ public class BubbleSort{
 				        a[j+1]=temp;
 				    }
 				}
-				
 			}
 		}
 		public static void printArray(int a[])
