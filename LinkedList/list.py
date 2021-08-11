@@ -35,7 +35,7 @@ class linked_list:
 
 	# Returns the value of the node at 'index'. 
 	def get(self,index):
-		if index>=self.length() or index<0: # added 'index<0' post-video
+		if index>=self.length() or index<0: 
 			print("ERROR: 'Get' Index out of range!")
 			return None
 		cur_idx=0
@@ -47,7 +47,7 @@ class linked_list:
 
 	# Deletes the node at index 'index'.
 	def erase(self,index):
-		if index>=self.length() or index<0: # added 'index<0' post-video
+		if index>=self.length() or index<0: 
 			print("ERROR: 'Erase' Index out of range!")
 			return 
 		cur_idx=0
