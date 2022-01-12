@@ -39,3 +39,29 @@ class Solution {
         return arr;
     }
 }
+
+//Alternate Solution
+
+class Solution {
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        Stack<Integer> st=new Stack<>();
+        Map<Integer,Integer> mp=new HashMap<>();
+        int ans[]=new int[nums1.length];
+        int i;
+        st.push(-1);
+        for(i=nums2.length-1;i>=0;i--)
+        {
+            while(st.peek()<nums2[i] && st.peek()!=-1)
+            {
+                st.pop();
+            }
+            mp.put(nums2[i],st.peek());
+            st.push(nums2[i]);
+        }
+        for(i=0;i<nums1.length;i++)
+        {
+            ans[i]=mp.get(nums1[i]);
+        }
+        return ans;
+    }
+}
