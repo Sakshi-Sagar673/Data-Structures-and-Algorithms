@@ -1,0 +1,23 @@
+class Solution:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        li=[]
+        nums1.sort();
+        nums2.sort();
+        if len(nums2)<len(nums1):
+            for i in range(len(nums2)):
+                if nums2[i] in nums1 and nums2[i] not in li:
+                    x=min(nums2.count(nums2[i]),nums1.count(nums2[i]))
+                    for j in range(x):
+                        li.append(nums2[i])
+        else:
+            for i in range(len(nums1)):
+                if nums1[i] in nums2 and nums1[i] not in li:
+                    x=min(nums2.count(nums1[i]),nums1.count(nums1[i]))
+                    for j in range(x):
+                        li.append(nums1[i])
+            
+                        
+        return li
+                    
+                    
+        
